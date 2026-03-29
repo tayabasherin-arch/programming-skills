@@ -3,8 +3,10 @@ quiz = {"France": "Paris", "Germany": "Berlin", "Italy": "Rome", "Spain": "Madri
 
 # Loop through the quiz items to ask questions
 for country, capital in quiz.items():
+
     # Ask the user for the capital
     answer = input(f"What is the capital of {country}? ")
+    
     # Check if the answer is correct regardless of capital letters
     if answer.lower() == capital.lower():
         print("Correct!")
